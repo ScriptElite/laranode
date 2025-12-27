@@ -35,10 +35,10 @@ class SystemStatsService
         $stats = explode(" ", $stats);
 
         return [
-            'free' => $stats[0],
-            'used' => $stats[1],
-            'buffcache' => $stats[2],
-            'total' => $stats[3]
+            'free' => $stats[0] ?? 0,
+            'used' => $stats[1] ?? 0,
+            'buffcache' => $stats[2] ?? 0,
+            'total' => $stats[3] ?? 0
         ];
     }
 
@@ -143,10 +143,10 @@ class SystemStatsService
         },  $mysqlStatus);
 
         return [
-            'pid' => $mysqlStatus[0],
-            'memory' => $mysqlStatus[1],
-            'cpuTime' => $mysqlStatus[2],
-            'uptime' => $mysqlStatus[3]
+            'pid' => $mysqlStatus[0] ?? 0,
+            'memory' => $mysqlStatus[1] ?? 0,
+            'cpuTime' => $mysqlStatus[2] ?? 0,
+            'uptime' => $mysqlStatus[3] ?? 0
         ];
     }
 
@@ -189,10 +189,10 @@ class SystemStatsService
             },  $status);
 
             $phpFpmStatuses[strtoupper(str_ireplace(".service", "", $service))] = [
-                'pid' => $status[0],
-                'memory' => $status[1],
-                'cpuTime' => $status[2],
-                'uptime' => $status[3]
+                'pid' => $status[0] ?? 0,
+                'memory' => $status[1] ?? 0,
+                'cpuTime' => $status[2] ?? 0,
+                'uptime' => $status[3] ?? 0
             ];
         }
 
