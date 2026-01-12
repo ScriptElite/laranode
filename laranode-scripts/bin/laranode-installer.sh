@@ -202,7 +202,7 @@ echo "--------------------------------------------------------------------------
 echo "Cloning Laranode"
 echo -e "\033[0m"
 
-git clone https://github.com/crivion/laranode.git /home/laranode_ln/panel
+git clone https://github.com/ScriptElite/laranode.git /home/laranode_ln/panel
 echo "--------------------------------------------------------------------------------"
 
 
