@@ -36,7 +36,7 @@ Laranode can be installed on a FRESH VPS or dedicated server.
 
 ### Quick Install
 ```bash
-curl -sSL https://raw.githubusercontent.com/crivion/laranode/refs/heads/main/laranode-scripts/bin/laranode-installer.sh | bash
+curl -sSL https://raw.githubusercontent.com/ScriptElite/laranode/refs/heads/main/laranode-scripts/bin/laranode-installer.sh | bash
 ```
 
 ## Getting Started
